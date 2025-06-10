@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+.border, #borderBox {
+    border: black 50px solid;
+}
+.border2, #borderBox2 {
+    border: rgb(86, 24, 6) 25px solid;
+    height: 610px;
+    border-right: rgb(86, 24, 6) 50px solid;
+    border-left: rgb(86, 24, 6) 50px solid;
+}
+.border3, #borderBox3 {
+    border: rgb(86, 24, 6) 25px solid;
+    height: 610px;
+    border-right: rgb(86, 24, 6) 50px solid;
+    border-left: rgb(86, 24, 6) 50px solid;
+    overflow:auto;
+}
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.button {
+    display: inline;
+    background-color: rgb(86, 24, 6);
+    color: rgb(108, 95, 16);
+    font-weight: 900;
+    height: 30px;
+    width: 700px;
+    font-family: monospace;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.button2 {
+    display: inline;
+    background-color: rgb(86, 24, 6);
+    color: rgb(108, 95, 16);
+    font-weight: 900;
+    height: 42px;
+    width: 1255px;
+    font-family: monospace;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.button:hover {
+    background-color: rgb(108, 95, 16);
+    color: black;
+}
+.button2:hover {
+    background-color: rgb(108, 95, 16);
+    color: black;
+}
+.iframe {
+    border: solid rgb(108, 95, 16) 20px;
+    position: absolute;
+    width: 83%;
+    height: 500px;
+}
+.reflection {
+    position: absolute;
+    bottom: 100px;
+    width: 83%;
+    height: auto;
+    border: black 10px solid;
+    background-color: rgb(86, 24, 6);
+    color: rgb(108, 95, 16);
+}
+.sign {
+    position: absolute;
+    bottom: 100px;
+    width: 83%;
+    height: auto;
+    border: black 10px solid;
+    background-color: rgb(86, 24, 6);
+    color: rgb(108, 95, 16);
+
+}
+/*
+    <div class="finalLink">
+        <form action="final.html">
+            <button class="finalButton">Final...</button>
+        </form>
+    </div>
+*/
