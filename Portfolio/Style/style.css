@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 600px) {
+#img, .img, img {
+    margin-left: 50px; 
+    margin-top: 50px;
+    height: auto;
+    max-width: 50%;
+}
+  }
+  @media only screen and (min-width: 768px) {
+#img, .img, img {float: left;
+    margin-left: 50px; 
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#img, .imgEnd, img {float: left;}
+        
+body {
+    background-color: rgb(38, 68, 138); 
+    border-color: black; 
+    border-style: none; 
+    border-left: 50px;}
+h1 {
+    text-align: center;
+    color: darkgoldenrod; 
+    border-top-color: black; 
+    border-top-width: 80px; 
+    border-top-style: inset; 
+    background-color: black; 
+    font-size: 60px;}
+h2 {
+    text-align: left; 
+    color: rgb(80, 24, 133); 
+    background-color: black; 
+    font-size: 40px; 
+    text-align: center; }
+ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: black; 
+    font-size: 25px; 
+    text-align: left;
+    background-color: rgb(142, 103, 5);
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    list-style: none;}
+p {
+    font-size: 30px; 
+    color: black; 
+    text-align: left; 
+    background-color: rgb(142, 103, 5);
+    margin-left: 100px;
+    margin-right: 100px;}
+i {
+    text-align: left;}
+a {
+    background-color: black; 
+    font-size: 40px;
+    color: rgb(80, 24, 133);}
+#iframeRow iframe {
+    border: 1px groove black;}
+input {
+    border: 10px rgb(142, 103, 5) groove;}
+.body a {
+    color: rgb(80, 24, 133); 
+    background-color: black; 
+    text-transform: uppercase;}
+    
+.body h1 {
+    font-family: 'Flavors-Regular';
+}
+.body h2 {
+    background-color: black; 
+    color: rgb(80, 24, 133); 
+    font-size: 30px;
+    font-style: italic;}
+table, th, td {
+    padding: 5px; 
+    background-color: rgb(80, 24, 133); 
+    margin-left: 100px;
+    border: 5px solid black; 
+    color: darkgoldenrod;}
+#introWorkshop li {
+    text-align: left; 
+    color: rgb(142, 103, 5);}
+#introWorkshop p {
+    text-align: right; 
+    margin-right: 100px;
+    font-family: fantasy, cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 900;}
+button:hover { 
+    background-color: rgb(80, 24, 133);}
+.button:active a {
+    background-color: rgb(142, 103, 5); 
+    color: black; 
+    border: 20px rgb(142, 103, 5) groove;}
+button {
+    width: auto; 
+    background-color: inherit; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-radius: 25px;}
+#hoverButtons a {
+    font-family: 'RubikWetPaint-Regular', fantasy, cursive ;}
+.button a {
+    background-color: rgb(142, 103, 5);
+    border: 20px black groove;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-variant: initial;}
+
+.body1 {
+    position: relative;
+    display: block;}
+.hidden {
+    display: none;
+    position: absolute sticky;
+    bottom: -70px;
+    right: -480px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.hidden a {  
+    background-color: rgb(142, 103, 5);
+    border: 20px black groove;
+    color: black;
+    font-size: 40px;
+    padding: 12px 16px;
+    text-decoration: 0;
+    display: block;
+    font-family: 'RubikWetPaint-Regular', fantasy, cursive ;}
+
+.hidden a:hover {background-color:rgb(80, 24, 133);}
+.body1:hover .hidden {display: inline-block;}
+.body1:hover .hidden {background-color: black}
+
+.body2 {
+    position: relative;
+    display: block;}
+.hidden2 {
+    display: none;
+    position: absolute sticky;
+    bottom: -100px;
+    right: -380px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.hidden2 a {  
+    background-color: rgb(142, 103, 5);
+    border: 20px black groove;
+    color: black;
+    font-size: 40px;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+    font-family: 'RubikWetPaint-Regular', fantasy, cursive ;}
+
+.hoverPurple button:hover {background-color: rgb(80, 24, 133);}
+
+.hidden2 a:hover {background-color:rgb(80, 24, 133);}
+.body2:hover .hidden2 {display: inline-block;}
+.body2:hover .hidden2 {background-color: black;}
+
+header {
+    position: relative;
+    top: 0px;}
+
+@font-face {
+    font-family: 'RubikWetPaint-Regular';
+    src: url(https://dreamhead1.github.io/MART341-WebDesign/Assignment11/workshop/fonts/RubikWetPaint-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'FingerPaint-Regular';
+    src: url(https://dreamhead1.github.io/MART341-WebDesign/Assignment11/workshop/fonts/FingerPaint-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Ephesis-Regular';
+    src: url(https://dreamhead1.github.io/MART341-WebDesign/Assignment11/workshop/fonts/Ephesis-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Flavors-Regular';
+    src: url(https://dreamhead1.github.io/MART341-WebDesign/Assignment11/workshop/fonts/Flavors-Regular.ttf) format('truetype');
+}
+
+#navbutton .button h3 {
+    float: left;}
+
+#nav button {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 100px;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;  
+}
+#paintingIMG, .paintingIMG {
+    border:  rgb(79, 61, 124) 15px groove;
+    z-index: 2;
+}
+.hiddenBio {
+    border:  rgb(79, 61, 124) 15px groove;
+    border-left: none;
+    height: 90.2%;
+    width: 52.7%;
+    position: absolute;
+    z-index: 1;
+    top: 448px;
+    right: 60px;
+    background-color: black;
+    display: none;
+    
+}
+
+#paintingIMG, .paintingIMG:hover+.hiddenBio{
+    display: block;
+}
+
+.bioWrite {
+    color: rgb(142, 103, 5);
+    font-size: 18px;
+    font-family: cursive;
+    line-height: 20px; 
+    text-align: right;
+}
+.main-grid-left, #main-grid-left {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    border: 10px white solid;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.imgSeq, #imgSeq {
+    z-index: 1;
+    position: relative;
+    display: block;
+    border: 10px white solid;
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+}
+
+
+/*
+ <div class="main-grid-left">
+                <!--iframe animation
+<iframe id="myframe" width="100%" src="/default.asp"></iframe>
+
+<p>Click the button to change the src attribute in the iframe.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("myframe").src = "lynx_landing.png";
+}
+</script>
+                -->
+                <iframe class="iframeMVMT" src="portfolioDyami/imgs/Abstract Soul.jpg"></iframe>
+*/
+}

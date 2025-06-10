@@ -1,0 +1,17 @@
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }
+
+.labelInput label{
+    display: block;
+
+  }
+.myFile {
+    color: rgb(142, 103, 5)
+    ;}
+.hoverBtn button:hover {
+    background-color: rgb(80, 24, 133);
+  }
