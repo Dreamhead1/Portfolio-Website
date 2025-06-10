@@ -1,0 +1,213 @@
+.hero-image, #hero-image {background-image:url(../Images/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+
+.container-md, .container-sm, .container {
+      max-width: 720px;
+}
+.handAnimation, #handBorder {
+    position: absolute;
+    min-width: 900px;
+    height: 600px;
+    top: 185px;
+    right: 270px;
+}
+.hand, #animation {
+    border: rgb(79, 61, 124) 15px groove;
+}
+.paintAnimation, #paintBorder {
+    position: absolute;
+    min-width: 900px;
+    height: 600px;
+    top: 185px;
+    right: 200px;
+}
+.paint, #animation {
+    border: rgb(79, 61, 124) 15px groove;
+}
+.digitalAnimation, #digitalBorder {
+    position: absolute;
+    min-width: 900px;
+    height: 600px;
+    top: 185px;
+    right: 270px;
+}
+.digital, #animation {
+    border: rgb(79, 61, 124) 15px groove;
+}
+.row-cols {
+
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    right: 30px;
+}
+.iframe {
+    line-height: 50%;
+}
+
+.hero-image, #hero-image {background-image:url(../Images/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.myCanvas, canvas{
+    border: rgb(79, 61, 124) 15px groove;
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    margin: 20px 20px 10px 10px;
+    max-height: 600px;
+    max-width: 600px;
+}
+#navVid, .navLogo {
+    height: 280px;
+    width: 230px;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0;
+    overflow-x: hidden;
+    position: fixed;
+}
+.logoVid, #logoVid {
+   border: #111 5px groove;
+    max-height: fit-content;
+    max-width: 230px;
+
+}
+.title, #h1 {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 40px;
+    background-color: #111;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'RockSalt-Regular';
+    src: url(Assignment14/fonts/RockSalt-Regular.ttf) format('truetype');
+}
+.title, #h1, h1 {
+    top: 20px;
+    font-family: cursive;
+    font-weight: 1200px;
+    font-size: 43px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: cyan;}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 140px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 100px;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    border: cyan 10px groove;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+#menuOne, .vertButton {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    left: 130px;
+    background-color: #111;
+    color: rgb(79, 61, 124);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    top: 132px;
+    letter-spacing: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: var(--bs-font-monospace)
+}
+#menuTwo, .vertButton {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    left: 180px;
+    background-color: #111;
+    color: rgb(79, 61, 124);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    top: 132px;
+    letter-spacing: 50px;
+    font-size: 35px;
+    text-align: center;
+    font-family: var(--bs-font-monospace)
+}
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+  }
+  .vertButton, #menuOne:hover {
+    background-color: rgb(79, 61, 124);
+    color: #111;
+  }
+  .vertButton, #menuTwo:hover {
+    background-color: rgb(79, 61, 124);
+    color: #111;
+  }
+.missionBio, #missionBio {
+    width: 84%;
+    height: 145px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    left: 240px;
+    right: 0;
+    background-color: #111;
+    color: #111;
+    top: 0;
+}
+.Bio, #mission h1{
+    text-align: center;
+    color: cyan;
+    font-size: 20px;
+    font-family: cursive;
+    writing-mode: horizontal-tb;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dropDown, #hidden {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 242px;
+}
+.button, #navbut {
+    height: 30px;
+    width: 422px;
+    background-color: rgb(79, 61, 124);
+    color:rgb(28, 127, 127);
+}
+.missionBio, #missionBio:hover {
+    background-color: rgb(79, 61, 124);
+    color: #111;
+}
+.missionBio, #missionBio:hover+.dropDown{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+  
+}
