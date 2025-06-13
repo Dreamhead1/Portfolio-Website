@@ -7,11 +7,18 @@
                         <meta name="viewport" content="width=device-width, initial-scale=100.0">                    
                     <title>Dyami <b>Dyami Clemente's Catalogue</b></title>
                 <link rel="stylesheet" href="../Style/style.css">
+<!--
+                <link rel="javascript" href="js/main.js">
+                <link rel="js" href="js/p5.min.js">
+-->
             <link rel="stylesheet" type="text/css" href="https://dreamhead1.github.io/MART341-WebDesign/Assignment13/Style/style.css">
         </head>
     <body>
+        <script src="js/main.js"></script>
+        <script src="js/p5.min.js"></script>
 <h1> 
     <u>DREAMHEAD CITIZEN</u> </h1>        
+<!--NAV BAR-->
         <header>
             <div 
                 class="body">
@@ -59,28 +66,79 @@
                         </button>
                     </form>
                 </div>
+<!--NAV BAR-->
+
         <hr / ; color="black"; size="10px">
+
 <!--Content begins!-->
             <div class="main-grid-left" id="main-grid-left">
-                
-                <!--iframe animation
-<iframe id="myframe" width="100%" src="/default.asp"></iframe>
-
-<p>Click the button to change the src attribute in the iframe.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("myframe").src = "lynx_landing.png";
-}
-</script>
-                -->
                 <div class="imgSeq" id="imgSeq">
-                    <img class="myIMG" src="portfolioDyami/imgs/Abstract Soul.jpg">
+                    <img class="myIMG" id="myIMG" src="portfolioDyami/imgs/Abstract Soul.jpg">
+
+<!--Invisible Image ID-->
+                    <div class="invisible" id="invisible">
+                        <img id="1" class="1" src="portfolioDyami/imgs/Abstract Soul.jpg">
+                        <img id="2" class="2" src="portfolioDyami/imgs/Acid Bath.jpg">
+                        <img id="3" class="3" src="portfolioDyami/imgs/Cyclops  Over The Mountain.jpg">
+                        <img id="4" class="4" src="portfolioDyami/dmt.html">
+                        <img id="5" class="5" src="portfolioDyami/imgs/egodeath.jpg">
+                        <img id="6" class="6" src="portfolioDyami/imgs/Falling.jpg">
+                        <img id="7" class="7" src="portfolioDyami/imgs/Hungry Dog Brain.jpg">
+                        <img id="8" class="8" src="portfolioDyami/imgs/Identity Dissolution.jpg">
+                        <img id="9" class="9" src="portfolioDyami/imgs/Lovers In An Embrace.jpg">
+                        <img id="10" class="10" src="portfolioDyami/imgs/Mask Flower.jpg">
+                        <img id="11" class="11" src="portfolioDyami/imgs/Monkey.jpg">
+                        <img id="12" class="12" src="portfolioDyami/imgs/Mushroom Death God.jpg">
+                        <img id="13" class="13" src="portfolioDyami/imgs/Painting My Shadow.jpg">
+                        <img id="14" class="14" src="portfolioDyami/imgs/Penguin Head.jpg">
+                        <img id="15" class="15" src="portfolioDyami/imgs/Pothead Open Head.jpg">
+                        <img id="16" class="16" src="portfolioDyami/imgs/Protection2.jpg">
+                        <img id="17" class="17" src="portfolioDyami/imgs/Pulling Me Out of The Thorns.jpg">
+                        <img id="18" class="18" src="portfolioDyami/imgs/Rat, Bird and Man.jpg">
+                        <img id="19" class="19" src="portfolioDyami/imgs/Shadow Split.jpg">
+                        <img id="20" class="20" src="portfolioDyami/imgs/Snake-Skull Dreams.jpg">
+                        <img id="21" class="21" src="portfolioDyami/imgs/The Sheriff.jpg">
+                        <img id="22" class="22" src="portfolioDyami/imgs/Tiger.jpg">
+
                 </div>
+<!--Invisible Image ID-->
+
+<!--Buttons-->
+
+                        <button type="button" class="arrowButton-L" onclick="leftArrow()">
+                            <div class="nextArrow-L">
+                                &lt;
+                            </div>
+                        </button>
+
+<!--L -> R-->
+
+                            <button type="button" class="arrowButton-R" onclick="rightArrow()">
+                                <div class="nextArrow-R">
+                                    &gt;
+                                </div>
+                            </button>
+
+                    </div>
+<script>
+
+    function leftArrow() {
+
+       imgMVMT = Tiger
+    
+};
+
+function rightArrow() {
+
+        imgMVMT = acidBath
+    };
+
+</script>
+<!--Buttons-->
+
+<!--ABOUT THE ARTIST-->
             <div class="aboutGrid" id="aboutGrid">
-                <!--hover about statement for picture-->
+<!--hover about statement for picture-->
                 <div class="abtGrid">
                 I have always been a Surrealist, a vagabond, seeking an absolute reality through the marshes of the metaphysical. <br/> 
                     That of which grants its being out of the marriage of the conscious and subconscious, of reality and surreality. <br/> 
@@ -90,11 +148,11 @@ function myFunction() {
             </div>
         </div>
             <div class="thumbnail-grid" id="thumbnail-grid">
-                <!--shows price on hover, 3 columns and #rows-->
+<!--shows price on hover, 3 columns and #rows-->
             </div>
     </div>
 
-<!-- Content ends! -->
+<!-- Content ends!BOTTOM NAV -->
  <div class="bottomNav" id="bottomNav">
         <hr / ; color="black"; size="10px">
 
@@ -120,3 +178,4 @@ function myFunction() {
 
     </body>
 </html>
+<!--BOTTOM NAV-->

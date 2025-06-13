@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+/*phone screens*/
   @media only screen and (max-width: 600px) {
 #img, .img, img {
     margin-left: 50px; 
@@ -9,6 +10,7 @@
     max-width: 50%;
 }
   }
+/*computer screens*/
   @media only screen and (min-width: 768px) {
 #img, .img, img {float: left;
     margin-left: 50px; 
@@ -255,19 +257,57 @@ header {
 }
 .imgSeq, #imgSeq {
     position: relative;
-    border: 10px rgb(142, 103, 5) solid;
+    border: 10px rgb(142, 103, 5) groove;
     width: 1000px;
     height: 500px;
-    background-color: rgb(80, 24, 133);
+    background-color: black;
 }
 .aboutGrid, #aboutGrid {
     position: relative;
-    border: 10px rgb(142, 103, 5) solid;
+    border: 10px rgb(142, 103, 5) groove;
     right: -1000px;
     width: 335px;
     height: 500px;
     top: -500px;
     overflow: hidden hidden;
+}
+.myIMG {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    max-width: 950px;
+    max-height: 450px;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+.nextArrow-L {
+    position: relative;
+    font-size: 60px;
+    color: rgb(142, 103, 5);
+}
+.arrowButton-L {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    width: 100px;
+    height: 100px;
+
+}
+.nextArrow-R {
+    position: relative;
+    font-size: 60px;
+    color: rgb(142, 103, 5);
+}
+.arrowButton-R {
+    position: absolute;
+    right: 0;
+    bottom: 200px;
+    width: 100px;
+    height: 100px;
+
+}
+.invisible, #invisible {
+    display: none;
 }
 
 /*
