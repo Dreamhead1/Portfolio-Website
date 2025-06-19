@@ -209,6 +209,7 @@ header {
     padding-bottom: 10px; 
     margin-bottom: 10px;  
 }
+
 .bottomNav, #bottomNav {
     z-index: 1;
     position: static;
@@ -217,25 +218,30 @@ header {
     width: 100%;
 }
 #paintingIMG, .paintingIMG {
-    border:  rgb(79, 61, 124) 15px groove;
+    border:  rgb(142, 103, 5) 10px groove;
     z-index: 2;
 }
+.abtIMAGE, #abtIMAGE {
+    border:  rgb(142, 103, 5) 10px groove;
+    z-index: 2;
+    max-width: 600px;
+    max-height: 700px;
+    min-height: 700px;
+    min-width: 600px;
+    width: fit-content;
+    height: fit-content;
+}
+
 .hiddenBio {
-    border:  rgb(79, 61, 124) 15px groove;
+    border:  rgb(142, 103, 5) 10px groove;
     border-left: none;
     height: 90.2%;
     width: 52.7%;
     position: absolute;
     z-index: 1;
-    top: 448px;
+    top: 450.5px;
     right: 60px;
-    background-color: black;
-    display: none;
-    
-}
-
-#paintingIMG, .paintingIMG:hover+.hiddenBio{
-    display: block;
+    background-color: black;   
 }
 
 .bioWrite {
@@ -244,29 +250,59 @@ header {
     font-family: cursive;
     line-height: 20px; 
     text-align: right;
+    margin: 20px;
 }
+
+.aboutBio { 
+    border:  rgb(142, 103, 5) 10px groove;
+    border-left: none;
+    height: 90.2%;
+    width: 52.7%;
+    position: absolute;
+    z-index: 1;
+    top: 450.5px;
+    right: 60px;
+    background-color: black;   
+
+}
+.abtBIO {
+    border:  rgb(142, 103, 5) 10px groove;
+    border-left: none;
+    height: 90.2%;
+    width: 52.7%;
+    position: absolute;
+    z-index: 1;
+    top: 450.5px;
+    right: 60px;
+    background-color: black;   
+
+}
+
 .main-grid-left, #main-grid-left {
     left: 80px;
     z-index: 1;
     position: relative;
+    padding-top: 20px;
+    top: 5px;
     display: block;
-    border: 10px rgb(142, 103, 5) solid;
+    border: 10px rgb(142, 103, 5) none;
     width: 90%;
-    height: fit-content;
+    height: 90%;
     background-color: rgb(38, 68, 138);
+    overflow: none;
 }
 .imgSeq, #imgSeq {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
-    width: 1000px;
+    width: 950px;
     height: 500px;
     background-color: black;
 }
 .aboutGrid, #aboutGrid {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
-    right: -1000px;
-    width: 335px;
+    right: -950px;
+    width: 383px;
     height: 500px;
     top: -500px;
     overflow: hidden hidden;
@@ -277,54 +313,172 @@ header {
     width: fit-content;
     max-width: 950px;
     max-height: 450px;
-    margin-left: 30%;
+    margin-left: auto auto;
     margin-top: 10px;
 }
-.nextArrow-L {
+
+.abtIMG, #abtIMG {
     position: relative;
-    font-size: 60px;
-    color: rgb(142, 103, 5);
-}
-.arrowButton-L {
-    position: absolute;
-    left: 0;
-    bottom: 200px;
-    width: 100px;
-    height: 100px;
+    width: 383px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
 
 }
-.nextArrow-R {
-    position: relative;
-    font-size: 60px;
-    color: rgb(142, 103, 5);
-}
-.arrowButton-R {
+
+.hoverIMG, #hoverIMG {
     position: absolute;
-    right: 0;
-    bottom: 200px;
-    width: 100px;
-    height: 100px;
+    border: rgb(142, 103, 5) 10px groove;
+    height: fit-content;
+    width: 99%;
+    background-color: black;
 
 }
-.invisible, #invisible {
-    display: none;
+.hvrIMG, #hvrIMG {
+    position: absolute;
+    left: 58px;
+    bottom: -408px;
+    border: rgb(142, 103, 5) 10px groove;
+    height: auto;
+    width: 39.5%;
+    background-color: black;
+}
+.btmIMG, #btmIMG {
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    border: rgb(142, 103, 5) 3px groove;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+/*
+<div id="hvrIMG" class="hvrIMG" >
+
+                    <img id="ii1" class="btmIMG" src="portfolioDyami/imgs/I&I/DandM.jpg">
+
+                    <img id="ii2" class="btmIMG" src="portfolioDyami/imgs/I&I/DyamiLOVE.jpg">
+
+                    <img id="ii3" class="btmIMG" src="portfolioDyami/imgs/I&I/DyamiMT.jpg">
+
+                    <img id="ii4" class="btmIMG" src="portfolioDyami/imgs/I&I/MyahandDyami.jpg">
+
+            </div>
+*/
+
+
+.bottomIMG{
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    border: rgb(142, 103, 5) 3px groove;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.idI #classI {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    
+}
+.submitBTN, #submitBTN {
+    width: 10%; 
+    background-color: rgb(80, 24, 133); 
+    color: rgb(142, 103, 5);
+}
+
+.submitBTN, #submitBTN:hover {
+    background-color: antiquewhite;
 }
 
 /*
- <div class="main-grid-left">
-                <!--iframe animation
-<iframe id="myframe" width="100%" src="/default.asp"></iframe>
+class="colIMG" id="colIMG"
+    width: auto; 
+    background-color: inherit; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-radius: 25px;
 
-<p>Click the button to change the src attribute in the iframe.</p>
+    background-color: rgb(142, 103, 5);
+    border: 20px black groove;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-variant: initial;
 
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("myframe").src = "lynx_landing.png";
-}
-</script>
-                -->
-                <iframe class="iframeMVMT" src="portfolioDyami/imgs/Abstract Soul.jpg"></iframe>
+    display: inline-block;
+    max-width: 300px;
+    max-height: 100px;
+    padding-bottom: 10px; 
+    margin-bottom: 10px;  
 */
+
+/*
+#i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22
+.myIMG 
+   <div class="main-grid-left" id="main-grid-left">
+                <div class="imgSeq" id="imgSeq">
+                    <img class="myIMG" id="myIMG" src="portfolioDyami/imgs/Abstract Soul.jpg">
+    <div class="hoverIMG" id="hoverIMG">
+                        
+                        <img id="i1" class="i1" src="portfolioDyami/imgs/Abstract Soul.jpg"/>
+                        <img id="i2" class="i2" src="portfolioDyami/imgs/Acid Bath.jpg"/>
+                        <img id="i3" class="i3" src="portfolioDyami/imgs/Cyclops  Over The Mountain.jpg"/>
+                        <img id="i4" class="i4" src="portfolioDyami/imgs/D.M.T.jpg"/>
+                        <img id="i5" class="i5" src="portfolioDyami/imgs/egodeath.jpg"/>
+                        <img id="i6" class="i6" src="portfolioDyami/imgs/Falling.jpg"/>
+                        <img id="i7" class="i7" src="portfolioDyami/imgs/Hungry Dog Brain.jpg"/>
+                        <img id="i8" class="i8" src="portfolioDyami/imgs/Identity Dissolution.jpg"/>
+                        <img id="i9" class="i9" src="portfolioDyami/imgs/Lovers In An Embrace.jpg"/>
+                        <img id="i10" class="i10" src="portfolioDyami/imgs/Mask Flower.jpg"/>
+                        <img id="i11" class="i11" src="portfolioDyami/imgs/Monkey.jpg"/>
+                        <img id="i12" class="i12" src="portfolioDyami/imgs/Mushroom Death God.jpg"/>
+                        <img id="i13" class="i13" src="portfolioDyami/imgs/Painting My Shadow.jpg"/>
+                        <img id="i14" class="i14" src="portfolioDyami/imgs/Penguin Head.jpg"/>
+                        <img id="i15" class="i15" src="portfolioDyami/imgs/Pothead Open Head.jpg"/>
+                        <img id="i16" class="i16" src="portfolioDyami/imgs/Protection2.jpg"/>
+                        <img id="i17" class="i17" src="portfolioDyami/imgs/Pulling Me Out of The Thorns.jpg"/>
+                        <img id="i18" class="i18" src="portfolioDyami/imgs/Rat, Bird and Man.jpg"/>
+                        <img id="i19" class="i19" src="portfolioDyami/imgs/Shadow Split.jpg"/>
+                        <img id="i20" class="i20" src="portfolioDyami/imgs/Snake-Skull Dreams.jpg"/>
+                        <img id="i21" class="i21" src="portfolioDyami/imgs/The Sheriff.jpg"/>
+                        <img id="i22" class="i22" src="portfolioDyami/imgs/Tiger.jpg"/>
+
+                </div>
+
+<!--Buttons-->
+
+                        <button type="button" class="arrowButton-L" onclick="leftArrow()">
+                            <div class="nextArrow-L">
+                                &lt;
+                            </div>
+                        </button>
+
+<!--L -> R-->
+
+                            <button type="button" class="arrowButton-R" onclick="rightArrow()">
+                                <div class="nextArrow-R">
+                                    &gt;
+                                </div>
+                            </button>
+
+                    </div>
+                    */
 }
