@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-/*phone screens*/
+/*phone screens
   @media only screen and (max-width: 600px) {
 #img, .img, img {
     margin-left: 50px; 
@@ -10,8 +10,9 @@
     max-width: 50%;
 }
   }
-/*computer screens*/
+computer screens
   @media only screen and (min-width: 768px) {
+  */
 #img, .img, img {float: left;
     margin-left: 50px; 
     margin-top: 50px;
@@ -482,4 +483,3 @@ class="colIMG" id="colIMG"
 
                     </div>
                     */
-}
