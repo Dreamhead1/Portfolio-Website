@@ -189,7 +189,7 @@
 }
 
 .dropDown, #hidden {
-    display: none;
+    z-index: 1;
     position: absolute;
     top: 120px;
     left: 242px;
@@ -197,9 +197,14 @@
 .button, #navbut {
     height: 30px;
     width: 422px;
-    background-color: rgb(79, 61, 124);
+    background-color: #111;
     color:rgb(28, 127, 127);
 }
+.button, #navbut:hover {
+    background-color: rgb(79, 61, 124);
+}
+
+
 .missionBio, #missionBio:hover {
     background-color: rgb(79, 61, 124);
     color: #111;
