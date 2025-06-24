@@ -231,7 +231,9 @@ header {
     min-width: 600px;
     width: fit-content;
     height: fit-content;
-}
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
 .hiddenBio {
     border:  rgb(142, 103, 5) 10px groove;
@@ -276,7 +278,6 @@ header {
     top: 450.5px;
     right: 60px;
     background-color: black;   
-
 }
 
 .main-grid-left, #main-grid-left {
@@ -292,6 +293,7 @@ header {
     background-color: rgb(38, 68, 138);
     overflow: none;
 }
+
 .imgSeq, #imgSeq {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
@@ -299,6 +301,34 @@ header {
     height: 500px;
     background-color: black;
 }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imgSeq:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imgSeq:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(142, 103, 5);
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: fantasy, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
 .aboutGrid, #aboutGrid {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
@@ -317,6 +347,8 @@ header {
     max-height: 450px;
     margin-left: 29%;
     margin-top: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .abtIMG, #abtIMG {
@@ -325,7 +357,35 @@ header {
     height: 500px;
     margin: 0;
     padding: 0;
-
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .abtGrid:hover .abtIMG {
+    opacity: 0.3;
+  }
+  
+  .abtGrid:hover .middle2 {
+    opacity: 1;
+  }
+  
+  .text2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(142, 103, 5);
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: fantasy, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hoverIMG, #hoverIMG {
@@ -357,20 +417,6 @@ header {
     display: flex;
     flex-flow: row wrap;
 }
-/*
-<div id="hvrIMG" class="hvrIMG" >
-
-                    <img id="ii1" class="btmIMG" src="portfolioDyami/imgs/I&I/DandM.jpg">
-
-                    <img id="ii2" class="btmIMG" src="portfolioDyami/imgs/I&I/DyamiLOVE.jpg">
-
-                    <img id="ii3" class="btmIMG" src="portfolioDyami/imgs/I&I/DyamiMT.jpg">
-
-                    <img id="ii4" class="btmIMG" src="portfolioDyami/imgs/I&I/MyahandDyami.jpg">
-
-            </div>
-*/
-
 
 .bottomIMG{
     position: static;
@@ -406,80 +452,10 @@ header {
     background-color: antiquewhite;
 }
 
+#lineBR {
+    margin-top: 50px;
+}
+
 /*
-class="colIMG" id="colIMG"
-    width: auto; 
-    background-color: inherit; 
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    border-radius: 25px;
-
-    background-color: rgb(142, 103, 5);
-    border: 20px black groove;
-    color: black;
-    font-size: 40px;
-    padding: 20px;
-    line-height: 50px;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    font-variant: initial;
-
-    display: inline-block;
-    max-width: 300px;
-    max-height: 100px;
-    padding-bottom: 10px; 
-    margin-bottom: 10px;  
+over lay img effect
 */
-
-/*
-#i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22
-.myIMG 
-   <div class="main-grid-left" id="main-grid-left">
-                <div class="imgSeq" id="imgSeq">
-                    <img class="myIMG" id="myIMG" src="portfolioDyami/imgs/Abstract Soul.jpg">
-    <div class="hoverIMG" id="hoverIMG">
-                        
-                        <img id="i1" class="i1" src="portfolioDyami/imgs/Abstract Soul.jpg"/>
-                        <img id="i2" class="i2" src="portfolioDyami/imgs/Acid Bath.jpg"/>
-                        <img id="i3" class="i3" src="portfolioDyami/imgs/Cyclops  Over The Mountain.jpg"/>
-                        <img id="i4" class="i4" src="portfolioDyami/imgs/D.M.T.jpg"/>
-                        <img id="i5" class="i5" src="portfolioDyami/imgs/egodeath.jpg"/>
-                        <img id="i6" class="i6" src="portfolioDyami/imgs/Falling.jpg"/>
-                        <img id="i7" class="i7" src="portfolioDyami/imgs/Hungry Dog Brain.jpg"/>
-                        <img id="i8" class="i8" src="portfolioDyami/imgs/Identity Dissolution.jpg"/>
-                        <img id="i9" class="i9" src="portfolioDyami/imgs/Lovers In An Embrace.jpg"/>
-                        <img id="i10" class="i10" src="portfolioDyami/imgs/Mask Flower.jpg"/>
-                        <img id="i11" class="i11" src="portfolioDyami/imgs/Monkey.jpg"/>
-                        <img id="i12" class="i12" src="portfolioDyami/imgs/Mushroom Death God.jpg"/>
-                        <img id="i13" class="i13" src="portfolioDyami/imgs/Painting My Shadow.jpg"/>
-                        <img id="i14" class="i14" src="portfolioDyami/imgs/Penguin Head.jpg"/>
-                        <img id="i15" class="i15" src="portfolioDyami/imgs/Pothead Open Head.jpg"/>
-                        <img id="i16" class="i16" src="portfolioDyami/imgs/Protection2.jpg"/>
-                        <img id="i17" class="i17" src="portfolioDyami/imgs/Pulling Me Out of The Thorns.jpg"/>
-                        <img id="i18" class="i18" src="portfolioDyami/imgs/Rat, Bird and Man.jpg"/>
-                        <img id="i19" class="i19" src="portfolioDyami/imgs/Shadow Split.jpg"/>
-                        <img id="i20" class="i20" src="portfolioDyami/imgs/Snake-Skull Dreams.jpg"/>
-                        <img id="i21" class="i21" src="portfolioDyami/imgs/The Sheriff.jpg"/>
-                        <img id="i22" class="i22" src="portfolioDyami/imgs/Tiger.jpg"/>
-
-                </div>
-
-<!--Buttons-->
-
-                        <button type="button" class="arrowButton-L" onclick="leftArrow()">
-                            <div class="nextArrow-L">
-                                &lt;
-                            </div>
-                        </button>
-
-<!--L -> R-->
-
-                            <button type="button" class="arrowButton-R" onclick="rightArrow()">
-                                <div class="nextArrow-R">
-                                    &gt;
-                                </div>
-                            </button>
-
-                    </div>
-                    */
