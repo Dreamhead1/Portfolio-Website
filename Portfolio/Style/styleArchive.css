@@ -1,58 +1,24 @@
 * {
     box-sizing: border-box;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
 * {
     width: 100%;
     height: auto;
 }
-body {
-    background-color: rgb(38, 68, 138); 
-    border-color: black; 
-    border-style: none; 
-    border-left: 50px;}
-h1 {
-    text-align: center;
-    color: darkgoldenrod; 
-    border-top-color: black; 
-    border-top-width: 80px; 
-    border-top-style: inset; 
-    background-color: black; 
-    font-size: 60px;}
-h2 {
-    text-align: left; 
-    color: rgb(80, 24, 133); 
-    background-color: black; 
-    font-size: 40px; 
-    text-align: center; }
-ul {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    color: black; 
-    font-size: 25px; 
-    text-align: left;
-    background-color: rgb(142, 103, 5);
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    list-style: none;}
-p {
-    font-size: 30px; 
-    color: black; 
-    text-align: left; 
-    background-color: rgb(142, 103, 5);
-    margin-left: 100px;
-    margin-right: 100px;}
-i {
-    text-align: left;}
-a {
-    background-color: black; 
-    font-size: 40px;
-    color: rgb(80, 24, 133);}
+.dhcPhone {
+    width: 100%;
+    height: auto;
+}
+header .navBody{
+    width: 100%;
+    height: auto;
+}
 
 }
-/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
   @media only screen and (min-width: 768px) {
-
+*/
 #img, .img, img {float: left;
     margin-left: 50px; 
     margin-top: 50px;
@@ -495,7 +461,8 @@ header {
 #lineBR {
     margin-top: 50px;
 }
-  }
+  
 /*
+}
 over lay img effect
 */
