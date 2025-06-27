@@ -1,15 +1,58 @@
 * {
     box-sizing: border-box;
   }
-  @media only screen and (max-width: 600px) {
-#img, .img, img {
-    margin-left: 50px; 
-    margin-top: 50px;
-    height: auto;
-    max-width: 50%;
-}
-  }
   @media only screen and (min-width: 768px) {
+* {
+    width: 100%;
+    height: auto;
+}
+body {
+    background-color: rgb(38, 68, 138); 
+    border-color: black; 
+    border-style: none; 
+    border-left: 50px;}
+h1 {
+    text-align: center;
+    color: darkgoldenrod; 
+    border-top-color: black; 
+    border-top-width: 80px; 
+    border-top-style: inset; 
+    background-color: black; 
+    font-size: 60px;}
+h2 {
+    text-align: left; 
+    color: rgb(80, 24, 133); 
+    background-color: black; 
+    font-size: 40px; 
+    text-align: center; }
+ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: black; 
+    font-size: 25px; 
+    text-align: left;
+    background-color: rgb(142, 103, 5);
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    list-style: none;}
+p {
+    font-size: 30px; 
+    color: black; 
+    text-align: left; 
+    background-color: rgb(142, 103, 5);
+    margin-left: 100px;
+    margin-right: 100px;}
+i {
+    text-align: left;}
+a {
+    background-color: black; 
+    font-size: 40px;
+    color: rgb(80, 24, 133);}
+
+}
+/*------------------------------------------------------------------------------------*/
+  @media only screen and (min-width: 768px) {
+
 #img, .img, img {float: left;
     margin-left: 50px; 
     margin-top: 50px;
@@ -207,6 +250,7 @@ header {
     padding-bottom: 10px; 
     margin-bottom: 10px;  
 }
+
 .bottomNav, #bottomNav {
     z-index: 1;
     position: static;
@@ -215,25 +259,32 @@ header {
     width: 100%;
 }
 #paintingIMG, .paintingIMG {
-    border:  rgb(79, 61, 124) 15px groove;
+    border:  rgb(142, 103, 5) 10px groove;
     z-index: 2;
 }
+.abtIMAGE, #abtIMAGE {
+    border:  rgb(142, 103, 5) 10px groove;
+    z-index: 2;
+    max-width: 600px;
+    max-height: 700px;
+    min-height: 700px;
+    min-width: 600px;
+    width: fit-content;
+    height: fit-content;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
 .hiddenBio {
-    border:  rgb(79, 61, 124) 15px groove;
+    border:  rgb(142, 103, 5) 10px groove;
     border-left: none;
     height: 90.2%;
     width: 52.7%;
     position: absolute;
     z-index: 1;
-    top: 448px;
+    top: 450.5px;
     right: 60px;
-    background-color: black;
-    display: none;
-    
-}
-
-#paintingIMG, .paintingIMG:hover+.hiddenBio{
-    display: block;
+    background-color: black;   
 }
 
 .bioWrite {
@@ -242,29 +293,87 @@ header {
     font-family: cursive;
     line-height: 20px; 
     text-align: right;
+    margin: 20px;
 }
+
+.aboutBio { 
+    border:  rgb(142, 103, 5) 10px groove;
+    border-left: none;
+    height: 90.2%;
+    width: 52.7%;
+    position: absolute;
+    z-index: 1;
+    top: 450.5px;
+    right: 60px;
+    background-color: black;   
+
+}
+.abtBIO {
+    border:  rgb(142, 103, 5) 10px groove;
+    border-left: none;
+    height: 90.2%;
+    width: 52.7%;
+    position: absolute;
+    z-index: 1;
+    top: 450.5px;
+    right: 60px;
+    background-color: black;   
+}
+
 .main-grid-left, #main-grid-left {
     left: 80px;
     z-index: 1;
     position: relative;
+    padding-top: 20px;
+    top: 5px;
     display: block;
-    border: 10px rgb(142, 103, 5) solid;
+    border: 10px rgb(142, 103, 5) none;
     width: 90%;
-    height: fit-content;
+    height: 90%;
     background-color: rgb(38, 68, 138);
+    overflow: none;
 }
+
 .imgSeq, #imgSeq {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
-    width: 1000px;
+    width: 950px;
     height: 500px;
     background-color: black;
 }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imgSeq:hover .image {
+    opacity: 0.3;
+  }
+  
+  .imgSeq:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(142, 103, 5);
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: fantasy, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
 .aboutGrid, #aboutGrid {
     position: relative;
     border: 10px rgb(142, 103, 5) groove;
-    right: -1000px;
-    width: 335px;
+    right: -950px;
+    width: 383px;
     height: 500px;
     top: -500px;
     overflow: hidden hidden;
@@ -273,52 +382,120 @@ header {
     position: relative;
     height: fit-content;
     width: fit-content;
+    text-align: center;
     max-width: 950px;
     max-height: 450px;
-    margin-left: 30%;
+    margin-left: 29%;
     margin-top: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
-.nextArrow-L {
+
+.abtIMG, #abtIMG {
     position: relative;
-    font-size: 60px;
-    color: rgb(142, 103, 5);
-}
-.arrowButton-L {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle2 {
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    left: 0;
-    bottom: 200px;
-    width: 100px;
-    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .abtGrid:hover .abtIMG {
+    opacity: 0.3;
+  }
+  
+  .abtGrid:hover .middle2 {
+    opacity: 1;
+  }
+  
+  .text2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(142, 103, 5);
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: fantasy, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hoverIMG, #hoverIMG {
+    position: absolute;
+    border: rgb(142, 103, 5) 10px groove;
+    height: fit-content;
+    width: 99%;
+    background-color: black;
 
 }
-.nextArrow-R {
-    position: relative;
-    font-size: 60px;
+.hvrIMG, #hvrIMG {
+    position: absolute;
+    left: 58px;
+    bottom: -408px;
+    border: rgb(142, 103, 5) 10px groove;
+    height: auto;
+    width: 39.5%;
+    background-color: black;
+}
+.btmIMG, #btmIMG {
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    border: rgb(142, 103, 5) 3px groove;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bottomIMG{
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    border: rgb(142, 103, 5) 3px groove;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.idI #classI {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    
+}
+.submitBTN, #submitBTN {
+    width: 10%; 
+    background-color: rgb(80, 24, 133); 
     color: rgb(142, 103, 5);
 }
-.arrowButton-R {
-    position: absolute;
-    right: 0;
-    bottom: 200px;
-    width: 100px;
-    height: 100px;
 
+.submitBTN, #submitBTN:hover {
+    background-color: antiquewhite;
 }
+
+#lineBR {
+    margin-top: 50px;
+}
+  }
 /*
- <div class="main-grid-left">
-                <!--iframe animation
-<iframe id="myframe" width="100%" src="/default.asp"></iframe>
-
-<p>Click the button to change the src attribute in the iframe.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("myframe").src = "lynx_landing.png";
-}
-</script>
-                -->
-                <iframe class="iframeMVMT" src="portfolioDyami/imgs/Abstract Soul.jpg"></iframe>
+over lay img effect
 */
-}

@@ -1,16 +1,8 @@
 * {
     box-sizing: border-box;
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
 * {
-    width: 100%;
-    height: auto;
-}
-.dhcPhone {
-    width: 100%;
-    height: auto;
-}
-header .navBody{
     width: 100%;
     height: auto;
 }
@@ -58,7 +50,7 @@ a {
     color: rgb(80, 24, 133);}
 
 }
-
+/*------------------------------------------------------------------------------------*/
   @media only screen and (min-width: 768px) {
 
 #img, .img, img {float: left;
