@@ -18,6 +18,9 @@ header .navBody{
     width: 100%;
     height: auto;
 }
+.imgSeq {
+    display: none;
+}
 }
 /*------------------------------------------------------------------------------------
   @media only screen and (min-width: 768px) {
