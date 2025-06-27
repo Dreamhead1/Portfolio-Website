@@ -1,18 +1,26 @@
 * {
     box-sizing: border-box;
   }
-/*phone screens
-  @media only screen and (max-width: 600px) {
+body {
+    background-color: rgb(38, 68, 138); 
+    border-color: black; 
+    border-style: none; 
+    border-left: 50px;
+}
+ 
+
+
+
+
 #img, .img, img {
     margin-left: 50px; 
     margin-top: 50px;
     height: auto;
     max-width: 50%;
 }
-  }
-computer screens
+
   @media only screen and (min-width: 768px) {
-  */
+
 #img, .img, img {float: left;
     margin-left: 50px; 
     margin-top: 50px;
@@ -455,7 +463,7 @@ header {
 #lineBR {
     margin-top: 50px;
 }
-
+}
 /*
 over lay img effect
 */
